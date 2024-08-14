@@ -1,0 +1,24 @@
+<h1>Usuários Cadastrados</h1>
+
+<div style="height: 40px; display: flex; align-items: center; justify-content: center; margin: 50px;">
+<button style="height: 40px; color: black;"><a href="/cadastro" style="color: black;">Cadastrar Usuários</a></button>
+<form action="/logout" method="GET" style="display:flex; justify-content: center; color: black; margin: 20px;">
+    <button type="submit" style="height: 40px;">Logout</button>
+</form>
+</div>
+
+<ul style="display: flex; justify-content: center; align-items: center; flex-direction: column; color: black;">
+    {{#each users}}
+    <li style="margin: 5px; display: flex; justify-content: center; align-items: center; margin: 20px;">
+        ID: {{id}}<br>
+        Email: {{email}}<br>
+        É ADM: {{isAdmin}}<br>
+        Data do Cadastro: {{formatDate createdAt}}<br>
+        {{#if (canRemoveUser ../user this)}}
+        <form action="/remover-users/{{id}}" method="POST" style="display:flex; justify-content: center; color: black; margin: 20px;">
+            <button type="submit" style="height: 40px;">Remover</button>
+        </form>
+        {{/if}}
+    </li>
+    {{/each}}
+</ul>

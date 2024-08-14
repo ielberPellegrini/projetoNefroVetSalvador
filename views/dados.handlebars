@@ -1,0 +1,17 @@
+{{#each clientes}}
+  <div class="card text-center" style="width: 18rem;">
+    <img
+      class="card-img-top"
+      src="img/{{this.imagem}}"
+      alt="Imagem de capa do card"
+    />
+    <div class="card-body">
+      <h5 class="card-title">{{nome}}</h5>
+      <p class="card-text">{{email}}.</p>
+      <p class="card-text">{{endereco}}.</p>
+      <p class="card-text">{{motivo}}.</p>
+    </div>
+  </div>
+{{/each}}
+
+<h1>Obrigado!!!!</h1>

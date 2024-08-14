@@ -1,0 +1,11 @@
+<h1 style="margin-top: 70px;">Curiosidades Sobre os Cachorros</h1>
+<div class="breed-container" style="margin-top: 50px;">
+  {{#each breeds}}
+    <div class="breed">
+      <h2>{{this.nome}}</h2>
+      <p>Temperamento: {{this.temperamento}}</p>
+      <p>Expectativa de Vida: {{this.expectativaVida}}</p>
+      <img src="{{this.imagem}}" alt="Imagem de {{this.nome}}" />
+    </div>
+  {{/each}}
+</div>

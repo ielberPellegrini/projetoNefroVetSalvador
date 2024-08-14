@@ -1,0 +1,20 @@
+<h1>Cadastro</h1>
+
+<div style="height: 40px; display: flex; align-items: center; justify-content: center; margin: 50px;">
+<button style="height: 40px; color: black;"><a href="/users" style="color: black;">Usuários Cadastrados</a></button>
+<form action="/logout" method="GET" style="display:flex; justify-content: center; color: black; margin: 20px;">
+    <button type="submit" style="height: 40px;">Logout</button>
+</form>
+</div>
+
+<div style="display:flex; justify-content: center; align-items: center; flex-direction: column; color: black; margin: 20px;">
+    <form action="/cadastro" method="POST">
+    <label for="email">Email:</label><br>
+    <input type="email" name="email" required /><br>
+    <label for="password">Senha:</label><br>
+    <input type="password" name="password" required /><br>
+    <label for="isAdmin">Admin:</label>
+    <input type="checkbox" name="isAdmin" />
+    <button type="submit" style="display: flex; align-items: center; justify-content: center;">cadastrar</button>
+  </form>
+</div>

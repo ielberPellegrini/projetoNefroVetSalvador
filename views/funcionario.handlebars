@@ -1,0 +1,18 @@
+<h1>Informações do Usuário</h1>
+
+{{!-- <div style="display:flex; justify-content: center; align-items: center; flex-direction: column; color: black;">
+    <h3>Email: {{user.email}}</h3>
+    <h3>Data do cadastro: {{user.createdAt}}</h3>
+    <h3>ID: {{user.id}}</h3>
+</div> --}}
+<form action="/logout" method="GET" style="display:flex; justify-content: center; color: black; margin: 20px;">
+    <button type="submit" style="height: 40px;">Logout</button>
+</form>
+
+ <ul style="display: flex; justify-content: center; align-items: center; flex-direction: column; color: black;">
+    <li style="margin: 5px; display: flex; justify-content: center; align-items: center; margin: 20px;">
+    ID: {{user.id}}<br>
+    Email: {{user.email}}<br>
+    Data do Cadastro: {{formatDate user.createdAt}}<br>
+    </li>
+  </ul>

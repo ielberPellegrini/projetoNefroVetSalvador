@@ -1,0 +1,82 @@
+<!-- Breadcrumbs-->
+      <section class="breadcrumbs-custom bg-image" style="margin-top: 50px; background-image: url(img/Foto\ 1920x301.png);">
+        <div class="shell">
+          <h1 class="breadcrumbs-custom__title" style="background-color: rgba(0, 0, 0, 0.13);">Fale Conosco</h1>
+        </div>
+      </section>
+
+      <!-- Get in Touch-->
+      <section class="section section-md bg-white text-center">
+        <div class="shell">
+          <div class="range range-md-center">
+            <div class="cell-md-11 cell-lg-10">
+              <h2 class="text-bold">Entre em contato Conosco</h2>
+              <p><span class="box-width-2">Estamos a sua disposição</span></p>
+              <div class="layout-columns">
+                <div class="layout-columns__main">
+                  <div class="layout-columns__main-inner">
+                    <!-- RD Mailform-->
+                    <form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" action="/contato" method="POST" enctype="multipart/form-data">
+                      <div class="form-wrap">
+                        <input class="form-input" id="contact-name" type="text" name="nome" data-constraints="@Required" placeholder="Seu Nome">
+                        <label class="form-label" for="contact-name"></label>
+                      </div>
+                      <div class="form-wrap">
+                        <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required" placeholder="E-mail">
+                        <label class="form-label" for="contact-email"></label>
+                      </div>
+                      <div class="form-wrap">
+                        <input class="form-input" id="contact-phone" type="text" name="telefone" data-constraints="@phone @Required" placeholder="Telefone">
+                        <label class="form-label" for="contact-telefone"></label>
+                      </div>
+                      <div class="form-wrap">
+                        <input class="form-input" id="contact-phone" type="text" name="endereco" data-constraints="@endereco @Required" placeholder="Endereço">
+                        <label class="form-label" for="contact-endereco"></label>
+                      </div>
+                      <div class="form-wrap">
+                        <label class="form-label" for="contact-message"></label>
+                        <textarea class="form-input" id="contact-message" name="motivo" data-constraints="@Required" placeholder="Digite Sua Mensagem"></textarea>
+                      </div>
+                      <div class="form-wrap">
+                        <label class="form-label" for="imagem" placeholder="Imagem"></label>
+                        <input class="form-input" type="file" name="imagem" id="imagem"/>
+                      </div>
+                      <div class="form-wrap form-button offset-1">
+                        <button class="button button-block button-primary-outline button-ujarak" type="submit">Enviar</button>
+                      </div>
+                      <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_web" value="http://localhost:3000/">
+                    </form>
+                  </div>
+                </div>
+                <div class="layout-columns__aside">
+                  <div class="layout-columns__aside-item">
+                    <p class="heading-5">Socials</p>
+                    <div class="divider-modern"></div>
+                    <ul class="list-inline-xs" style="display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;">
+                      <li><a class="icon icon-md icon-gray-7 fa fa-instagram" href="https://www.instagram.com/nefrovet_salvador/"> Instagram</a></li>
+                      <li><a class="icon icon-md icon-gray-7 fa fa-whatsapp" href="https://api.whatsapp.com/send/?phone=5571992136767"> Whatsapp</a></li>
+                    </ul>
+                  </div>
+                  <div class="layout-columns__aside-item">
+                    <p class="heading-5">Telefone</p>
+                    <div class="divider-modern"></div>
+                    <div class="unit unit-horizontal unit-spacing-xxs">
+                      <div class="unit__left"><span class="icon icon-md icon-primary material-icons-local_phone"></span></div>
+                      <div class="unit__body"><a href="tel:#">(71) 992136767</a></div>
+                    </div>
+                  </div>
+                  <div class="layout-columns__aside-item">
+                    <p class="heading-5">Atendimentos</p>
+                    <div class="divider-modern"></div>
+                    <div class="unit unit-horizontal unit-spacing-xxs">
+                      <div class="unit__left"><span class="icon icon-md icon-primary mdi mdi-clock"></span></div>
+                      <div class="unit__body"><span>Atendimentos: <br>Seg-Sex 8:30–18:00. Sábado de 8:30-13:00</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
